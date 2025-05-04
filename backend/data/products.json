@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Electronica",
+    "price": 99999,
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "category": "Mascotas",
+    "price": 69999,
+    "stock": 35
+  },
+  {
+    "id": 3,
+    "name": "Headphones",
+    "category": "Accessories",
+    "price": 15000,
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "name": "Silla ergonómica",
+    "category": "Oficina",
+    "price": 32000,
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "name": "Zapatillas deportivas",
+    "category": "Deportes",
+    "price": 18000,
+    "stock": 50
+  },
+  {
+    "id": 6,
+    "name": "Aspiradora inteligente",
+    "category": "Hogar",
+    "price": 45000,
+    "stock": 15
+  },
+  {
+    "id": 7,
+    "name": "Crema facial",
+    "category": "Belleza",
+    "price": 8000,
+    "stock": 60
+  },
+  {
+    "id": 8,
+    "name": "Galletas integrales",
+    "category": "Alimentos",
+    "price": 2500,
+    "stock": 200
+  },
+  {
+    "id": 9,
+    "name": "Juguete",
+    "category": "Juguetes",
+    "price": 50000,
+    "stock": 200
+  },
+  {
+    "id": 10,
+    "name": "escritorio",
+    "category": "Oficina",
+    "price": 500000,
+    "stock": 20
+  }
+]
