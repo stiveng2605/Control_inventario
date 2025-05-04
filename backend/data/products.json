@@ -64,9 +64,9 @@
   },
   {
     "id": 10,
-    "name": "Cargador iphone",
+    "name": "cargador iphone",
     "category": "Electronica",
-    "price": 50000,
-    "stock": 30
+    "price": 70000,
+    "stock": 80
   }
 ]

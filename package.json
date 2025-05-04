@@ -1,0 +1,25 @@
+{
+  "name": "inventario2",
+  "version": "1.0.0",
+  "description": "Aplicación web que incluye un backend en Node.js/Express con validaciones mediante Zod y pruebas unitarias con Jest, así como un frontend en Angular/Ionic que permite a los usuarios gestionar productos con una interfaz amigable. Los datos se almacenan en un archivo JSON, simulando una base de datos ligera.",
+  "main": "index.js",
+  "scripts": {
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "cd backend && npm install && node app.js",
+  "client": "cd frontend && npm install && ng serve -o"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stiveng2605/Control_inventario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stiveng2605/Control_inventario/issues"
+  },
+  "homepage": "https://github.com/stiveng2605/Control_inventario#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

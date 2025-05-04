@@ -12,7 +12,6 @@ app.use(json())
 
 app.use(cors({
     origin: ['http://localhost:8100', 'http://localhost:4200'],
-    credentials: true // solo si usas cookies o autenticación
 }));
 
 app.use('/products', productRouter)
