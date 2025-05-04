@@ -20,7 +20,12 @@ Este proyecto fue desarrollado con **Angular** , **Ionic** , **NodeJS** y **Expr
 1. **Clona el repositorio**
 
 ```bash
-git https://github.com/stiveng2605/Control_inventario.git
+git clone https://github.com/stiveng2605/Control_inventario.git
+```
+
+2. **Ingresar a la raiz del proyecto**
+
+```bash
 cd Control_inventario
 ```
 
@@ -30,6 +35,6 @@ cd Control_inventario
 npm run start
 ```
 
-> Este comando ejecuta todo el proyecto, incluyendo servidor de desarrollo y cliente, Instalando las dependencias.
+> Este comando ejecuta todo el proyecto, incluyendo la API REST y la parte visual de Angular.
 
 ---
