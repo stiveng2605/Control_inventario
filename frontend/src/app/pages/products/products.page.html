@@ -1,0 +1,54 @@
+<ion-content>
+  <div class="all">
+
+    <div class="tittle">
+      <ion-title>Productos</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="add-product" (click)="navigateCreate()">
+          <ion-icon name="add-circle" size="large"></ion-icon>
+          Agregar Producto
+        </ion-button>
+      </ion-buttons>
+    </div>
+
+  
+    <ion-grid *ngIf="verProducts; else noVerProducts" class="product-table">
+
+      <ion-row class="table-header">
+        <ion-col><strong>Id</strong></ion-col>
+        <ion-col><strong>Producto</strong></ion-col>
+        <ion-col><strong>Categoría</strong></ion-col>
+        <ion-col><strong>Precio</strong></ion-col>
+        <ion-col><strong>Stock</strong></ion-col>
+        <ion-col><strong>Acciones</strong></ion-col>
+      </ion-row>
+  
+      <ion-row *ngFor="let api of verProduct" class="table-row">
+        <ion-col>{{api.id}}</ion-col>
+        <ion-col>{{api.name}}</ion-col>
+        <ion-col>{{api.category}}</ion-col>
+        <ion-col>{{api.price}}</ion-col>
+        <ion-col>{{api.stock}}</ion-col>
+
+        <ion-col>
+          <ion-button size="large" fill="clear" (click)="navigateUpdate(api.id)">
+            <ion-icon name="create"></ion-icon>
+          </ion-button>
+
+          <ion-button size="large" fill="clear" color="danger" (click)="eliminarProducto(api.id)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  
+    <ng-template #noVerProducts>
+      <ion-text color="medium" class="ion-text-center">
+        <p>No existen productos</p>
+      </ion-text>
+    </ng-template>
+
+  </div>
+
+</ion-content>

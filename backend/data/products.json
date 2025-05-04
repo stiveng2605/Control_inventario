@@ -64,9 +64,9 @@
   },
   {
     "id": 10,
-    "name": "escritorio",
-    "category": "Oficina",
-    "price": 500000,
-    "stock": 20
+    "name": "Cargador iphone",
+    "category": "Electronica",
+    "price": 50000,
+    "stock": 30
   }
 ]

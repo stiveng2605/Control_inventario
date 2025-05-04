@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="all">
+    <form [formGroup]="FormProduct" (ngSubmit)="validForm()" class="form">
+      <h2>{{ isUpdate ? 'Actualizar Producto' : 'Crear Producto' }}</h2>
+
+      <div class="dat">
+        <label for="name">Nombre:</label>
+        <input id="name" type="text" formControlName="name">
+        <label [hidden]="this.FormProduct.get('name')?.valid">Nombre no valido</label>
+      </div>
+
+      <div class="dat">
+        <label for="category">Categoría:</label>
+        <select id="category" formControlName="category">
+          <option value="" disabled selected>Selecciona una categoría</option>
+          <option value="Electronica">Electrónica</option>
+          <option value="Ropa">Ropa</option>
+          <option value="Alimentos">Alimentos</option>
+          <option value="Hogar">Hogar</option>
+          <option value="Deportes">Deportes</option>
+          <option value="Juguetes">Juguetes</option>
+          <option value="Belleza">Belleza</option>
+          <option value="Libros">Libros</option>
+          <option value="Salud">Salud</option>
+          <option value="Oficina">Oficina</option>
+          <option value="Mascotas">Mascotas</option>
+        </select>
+        <label [hidden]="this.FormProduct.get('category')?.valid">Selecciona una Categoria</label>
+      </div>
+
+      <div class="dat">
+        <label for="price">Precio:</label>
+        <input id="price" type="number" formControlName="price">
+        <label [hidden]="this.FormProduct.get('price')?.valid">Precio no valido</label>
+      </div>
+
+      <div class="dat">
+        <label for="stock">Stock:</label>
+        <input id="stock" type="number" formControlName="stock">
+        <label [hidden]="this.FormProduct.get('stock')?.valid">Cantidad Stock no valido</label>
+      </div>
+
+      <div class="buttom">
+        <button type="submit" [disabled]="this.FormProduct.invalid" class="buttom-sub">
+          {{ isUpdate ? 'Actualizar' : 'Crear' }}
+        </button>
+      </div>
+    </form>
+  </div>  
+</ion-content>

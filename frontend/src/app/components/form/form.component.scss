@@ -1,0 +1,58 @@
+.all {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #1dcda9;
+    color: black;
+    border-radius: 10px;
+    background-color: #1dcda9;
+    color: white;
+}
+
+.form h2 {
+    text-align: center;
+    color: white;
+}
+
+.dat {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.dat input, select {
+    background-color: #f8f8f8;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: #f8f8f8;
+    color: black;
+}
+
+.buttom{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-sub {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1dcda9; /* Color de fondo inicial */
+    border: 2px solid white; /* Establecer un borde transparente inicialmente */
+    transition: all 0.3s ease; /* Transición suave para los cambios */
+}
+  
+.buttom-sub:hover {
+    color: #1dcda9; /* Cambiar el color de la letra a azul */
+    background-color: white; /* Cambiar el fondo a blanco */
+    border: 2px solid #1dcda9; /* Establecer el borde con el color deseado */
+}
