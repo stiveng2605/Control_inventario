@@ -4,9 +4,10 @@
   "description": "Aplicación web que incluye un backend en Node.js/Express con validaciones mediante Zod y pruebas unitarias con Jest, así como un frontend en Angular/Ionic que permite a los usuarios gestionar productos con una interfaz amigable. Los datos se almacenan en un archivo JSON, simulando una base de datos ligera.",
   "main": "index.js",
   "scripts": {
-  "start": "concurrently \"npm run server\" \"npm run client\"",
-  "server": "cd backend && npm install && node app.js",
-  "client": "cd frontend && npm install && ng serve -o"
+  "start": "concurrently \"nmp i\"  \"npm run server\" \"npm run client\"",
+  "server": "cd backend && npm i && node app.js",
+  "client": "cd frontend && npm i && ng serve -o",
+  "install": "npm i"
 },
   "repository": {
     "type": "git",
